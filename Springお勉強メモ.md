@@ -37,5 +37,10 @@ touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: 
 fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
 ・・・
 ```
+brew install maven 実行時エラーが出たら
+brew install gcc を実行 これもエラーが出たら
+xcode-select --install を実行
+終わったらもう一度 brew install gcc を実行し
+brew install maven を実行すればOK！
 
 #### pom.xmlとは
