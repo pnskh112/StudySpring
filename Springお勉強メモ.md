@@ -21,7 +21,21 @@ WEBアプリ開発に用いるフレームワークは、とくに「WEBフレ�
 #### 環境構築
 
 * 注意点！
-* 注意点！！！！！
-
+caskでjavaインストールする際、権限エラーがでることがある
+```
+XXXXX % brew cask install java
+Error: Can't create update lock in /usr/local/var/homebrew/locks!
+Fix permissions by running:
+  sudo chown -R $(whoami) /usr/local/var/homebrew
+Error: Download failed on Cask 'java' with message: Permission denied @ rb_sysopen - /usr/local/var/homebrew/locks/57f2cd89482ecc0b0c6a7b3c3b0eff804f1cbd4d1e4688e86192566dfd9cfe2a--openjdk-13.0.2_osx-x64_bin.tar.gz.incomplete.lock
+XXXXX % sudo chown -R $(whoami) /usr/local/var/homebrew
+Password:
+XXXXX % brew cask install java                         
+touch: /usr/local/Homebrew/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/.git/FETCH_HEAD: Permission denied
+touch: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/FETCH_HEAD: Permission denied
+fatal: Unable to create '/usr/local/Homebrew/.git/index.lock': Permission denied
+・・・
+```
 
 #### pom.xmlとは
